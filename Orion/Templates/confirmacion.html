@@ -1,11 +1,12 @@
 {% extends "index.html" %}
+{% load static %}
 
 {% block content %}
     <div>
         <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis sed incidunt laborum rem magni qui placeat, facere repudiandae harum totam dicta vero aperiam saepe quae, illum ratione aliquam corrupti.</p>
     </div>
-    <div>
-        <img src="" alt="">
+    <div class="container-img">
+        <img class="check" src="{% static 'images/check.png' %}" alt="" width="150px">
     </div>
     <div>
         <p>Ya puede usar <strong>OrionBot</strong> desde su celular</p>
