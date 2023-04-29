@@ -17,8 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from . import registro
 
 urlpatterns = [
+    path('', registro.home, name='inicio'),
     path('admin/', admin.site.urls),
     path('webhook/', views.whatsAppWebhook),
+    path('login/',registro.login),
+    path('autenticacion/', registro.autenticacion),
+    path('confirmacion/',registro.confirmacion)
 ]

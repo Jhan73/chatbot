@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        *{
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+            font-family:  Verdana, Helvetica, serif, Geneva, Tahoma, sans-serif ;
+        }
+        a{
+            text-decoration: none;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+            color: #25AE0F;
+            font-size: 40px;
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+        .btn{
+            background: #25AE0F;
+            color: #FFF;
+            width: 200px;
+            padding: 7px 10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px #555555;
+            font-weight: bold;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .parrafo{
+            text-align: justify;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .section{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box{
+            width: 80%;
+            min-width: 250px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background: #e3e3e3;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 1px 1px 4px #555555;
+        }
+        form{
+            text-align: center;
+        }
+        .input{
+            min-width: 200px;
+            width: 80%;
+            max-width: 600px;
+            padding: 7px 10px;
+            border-radius: 20px;
+            outline: none;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 1px 2px 6px #25AE0F;
+            padding-left: 20px;
+        }
+        .container-img img{
+            display: block;
+            width: 200px;
+            margin: 50px auto;
+        
+        }
+    </style>
+</head>
+<body>
+    <h2>OrionBot</h2>
+    <div class="section">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    
+</body>
+</html>
