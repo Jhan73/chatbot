@@ -1,9 +1,12 @@
 from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
+from .crd import password
 from rivescript import RiveScript
 import psycopg2
 from heyoo import WhatsApp
+import string
+from unidecode import unidecode
 
 @csrf_exempt
 def whatsAppWebhook(request):
@@ -36,7 +39,10 @@ def obtenerRespuesta(mensaje):
     bot.load_file('./finanzas.rive')
     bot.sort_replies()
 
-    respuesta = bot.reply("localuser", mensaje)
+    puntuacion = string.punctuation
+    lowerSinPuntuacion = unidecode((''.join(caracter for caracter in mensaje if caracter not in puntuacion)).lower())
+
+    respuesta = bot.reply("localuser", lowerSinPuntuacion)
     respuesta = respuesta.replace('\\n','\\\n')
     respuesta = respuesta.replace('\\','')
 
@@ -47,7 +53,7 @@ def registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario):
         connection = psycopg2.connect(
             host = 'postgresql-jhan.alwaysdata.net',
             user = 'jhan',
-            password = 'Labradoodle24',
+            password = password,
             database = 'jhan_orion'
         )
 
@@ -66,7 +72,7 @@ def registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario):
             connection.commit()
             enviarMensaje(telefonoUsuario, respuesta)
     except Exception as ex:
-        print(ex)
+        pass
     finally:
         connection.close()
 
