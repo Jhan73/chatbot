@@ -1,0 +1,210 @@
+! version = 2.0
+
++ [*](hola|hola que tal|quien eres)[*]
+- Hola, ¿en qué puedo ayudarte?
+
++  [*](desafiliar|desafilio) [*] (tarjeta|tarjetas)[*] 
+- Deberá solicitarlo por escrito o a través de la Banca por Teléfono del BANCO. Esta desafiliación se hará efectiva cuando el BANCO comunique en vía de confirmación y a través del correo electrónico al CLIENTE que su Tarjeta ha sido desafiliada.
+
++ [*]tea[*]
+- La Tasa de Interés Efectiva Anual (TEA) es la tasa de interés que se aplica a los saldos de la cuenta y se calcula sobre una base anual.
+
++ [*]token[*]
+- Se refiere a la Clave Digital Token, que es un dispositivo que podría ser entregado por el BANCO al CLIENTE como una medida adicional de seguridad para acceder a su cuenta bancaria en línea. La Clave Digital Token muestra una clave de acceso actualizada periódicamente que el CLIENTE debe ingresar junto con su Clave Personal para acceder a su cuenta bancaria en línea.
+
++ [*] seguro [*]
+- El banco tiene contratado un conjunto de servicios que por su naturaleza son complementarios a los servicios brindados por el BANCO, tales como programas de seguros, mecanismos de protección, sistemas de coberturas y fondos de contingencia para cubrir riesgos en las operaciones y/o servicios. La contratación de los seguros para productos pasivos será voluntaria.
+
++ [*] (varias|mas) personas [*]
+- El contrato de cuenta corriente o de ahorros puede ser celebrado por dos o más personas, quienes serán consideradas como titulares conjuntos de la cuenta. Cada titular tendrá los mismos derechos y obligaciones sobre la cuenta y cualquier operación realizada en ella. 
+
++ [*] (lavado|terrorismo) [*]
+- El BANCO se reserva el derecho de modificar los contratos celebrados con el CLIENTE en consideración al perfil del CLIENTE vinculado al sistema de prevención del lavado de activos o del financiamiento del terrorismo. Además, el BANCO puede resolver los contratos sin previo aviso si advierte indicios de operaciones fraudulentas, inusuales, irregulares o sospechosas.
+
++ [*] (empresa|empresas|persona juridica) [*] (solicitar|pedir|tener) (tarjeta|tarjetas) [*]
+- Las personas jurídicas pueden ser usuarias de una o más Tarjetas siempre que sus representantes tengan poder suficiente para disponer de los fondos a su sola firma.
+
++ [*] limite [*] (sacar dinero|sacar plata|retirar|retiro) [*] (cajero|cajeros) [*]
+- Depende del tipo de cuenta y la cantidad de fondos disponibles, con el fin de proteger al cliente.
+
++ [*] (donde|como) [*] (pedir|solicitar) una tarjeta [*] credito (en linea|web) [*]
+- A través de la plataforma del BANCO, donde el proceso de solicitud incluye revisión de crédito y su aprobación final.
+
++ [*] (retirar todo|retiro total|retiro completo) [*] (fondos|fondo) cts [*]
+- El retiro total de los fondos de CTS solo procederá al cese del trabajador y previo cumplimiento de las demás formalidades que el BANCO o la ley tengan establecidos para estos casos. 
+
++ [*] (fallecer|fallecido|muerto|fallecimiento|muerte) [*] (cuenta|cuentas)[*]
+- En caso de fallecimiento del titular de una cuenta, el BANCO bloqueará las cuentas cuando sea informado por escrito o tome conocimiento de ello hasta que los herederos acrediten su condición de tales.
+
++ [*] (banca movil|aplicativo|en linea) [*]
+- La banca móvil es un servicio que permite a los clientes del banco realizar operaciones bancarias a través de un dispositivo móvil, como un teléfono celular o un teléfono inteligente. Para acceder al servicio de Banca Móvil, el cliente debe contar con una Tarjeta de Débito activa y haber afiliado su dispositivo móvil al servicio.
+
++ [*] (limite|limites|tope|maximo) [*] (tarjeta|cuenta|tarjetas) [*]
+- La utilización de la Tarjeta dentro o fuera del país procederá solamente si las cuentas o depósitos tienen fondos disponibles o líneas de crédito o sobregiros que el BANCO queda facultado mas no obligado a conceder. Por lo tanto, los límites específicos de sus cuentas y tarjetas pueden variar dependiendo de su situación financiera y el tipo de cuenta o tarjeta que tenga.
+
++ [*] (cargos|cargo) [*] (cuentas|depositos) [*]
+- El BCP puede cargar tributos, comisiones, gastos y penalidades originados por la utilización de las cuentas y/o servicios recibidos del banco, incluyendo aquellos cargos ocasionados por informes y operaciones practicadas por orden de autoridades. 
+
++ [*] deposito directo [*]
+- Método de pago en el que el salario o ingreso del cliente se deposita directamente en su cuenta bancaria, puede ser transferencia electrónica.
+
++ [*] contrato [*] condiciones generales [*]
+- Acuerdo legal estandarizado que establece términos y condiciones de un servicio o producto, donde se estable reglas que ambas parten deben seguir.
+
++ [*] motivos [*] (cerrar|cierre) [*] cuenta [*]
+- Los motivos para cerrrar una cuenta pueden ser:\n1 Cierre previsto por la legislación aplicable.\n2 Cuando, sin autorización del BANCO, la cuenta se utilice para colectas, recaudaciones o depósitos hechos por terceras personas. \n3 Cuando se realicen operaciones que puedan perjudicar al BANCO, al CLIENTE o a otros clientes del BANCO. \n4 Cuando la cuenta no esté siendo utilizada personalmente por el CLIENTE o por un representante autorizado del CLIENTE. \n5 Si a criterio del BANCO existe duda o conflicto respecto de la legitimidad, legalidad, vigencia o alcances de las facultades de los representantes del CLIENTE. \n6 Cuando la cuenta se encuentre inmovilizada sin saldo a favor del CLIENTE por más de 3 meses. \n7 Si el CLIENTE ingresa a un procedimiento de disolución,liquidación o concurso de acreedores. \n
+
+//> topic cuenta de ahorros
+
++ [*] (requisito|requisitoscondicion|condiciones) [*] (abrir|aperturar) [*] cuenta [*] (ahorros|ahorro) [*]
+- Ser mayor de edad, DNI o pasaporte vigente y presentar una constancia de domicilio, en caso de ser menor de edad se puede abrir una cuenta conjunta, para esto se presenta partida de nacimiento y DNI del menor y adulto a cargo.
+- Ser mayor de edad, presentar DNI vigente y llenar una solicitud solicitada por el banco, para esto se cumple los requisitos solicitados y firmar el contrato.
+- Puede acercarse a cualquier Oficina del BANCO y llenar el respectivo formulario de autorización de cargo en cuenta u optar por la afiliación vía la página web del BANCO (www.viabcp.com).
+
++ [*] cuenta [*] (ahorro|ahorros) [*] (empresarial|empresa) [*]
+- Presentar documentos de constitución de la empresa, DNI de representantes legales y llenar la solicitud ofrecida por el Banco, esto se valida de acuerdo a la documentación correspondiente de la empresa, identificación de los representantes legales y cumplimiento de requisitos establecidos.
+
++ [*] (sacar|retirar) [*] (dinero|plata) [*]
+- Se puede retirar dinero en cualquier momento y sin costo alguno en caso de cajeros automáticos del banco, en caso contrario sea por ventanilla o en cajeros de otros bancos puede haber cargo por transacción.
+
++ [*] (tope|limite|maximo) [*] retiro (diario|al dia| en el dia) [*]
+- Depende del tipo de cuenta, la red de cajeros automáticos y políticas del banco.
+
++ [*] (menor de edad|menor|nino) [*]
+- Un menor de edad puede ser el único titular de una cuenta de ahorros, pero los retiros solo podrán ser hechos por sus representantes legales (padres o tutores), siempre que cuenten con autorización judicial para tal efecto.
+
++ [*] (mas de una|mas|varias) [*] (cuenta|cuentas) [*] ahorro [*]
+- Sí, puedes tener más de una cuenta de ahorros en el mismo banco. Sin embargo, es importante tener en cuenta que el BANCO podrá establecer condiciones especiales según la modalidad de depósito que haya elegido el CLIENTE.
+
++ [*] (tasa|tasa de interes|interes) [*] (cuenta|cuentas) [*] (*ahorros|*ahorro) [*]
+- Las tasas de interés de las cuentas en BCP puede variar según el tipo de cuenta y monto depositado, pero estas se encuentran disponibles en la pagina web y también puede ser consultada en el contrato. 
+
++ [*] (beneficio|beneficios) [*] cuenta [*] (ahorros|ahorro) [*]
+- Programas de puntos, descuentos en establecimientos afiliados y servicios de banca en línea, esto depende del tipo de cuenta y el monto depositado.
+
++ [*] (tarifas|comisiones|tarifa|comision) [*] titular [*] (cuenta|cuentas) [*] (ahorros|ahorro) [*]
+- Varía según el tipo de cuenta y la operación que se realice, pero las comisiones que se cobran son la de mantenimiento de la cuentas, transferencias a cuentas de otros bancos y retiros de cajeros automáticos.
+
+
+//> topic cuenta sueldo
+
++ [*] (es|entiende|entender) [*] (cuenta|cuentas) (sueldo|sueldos) [*]
+- Cuenta de depósito a la vista, en soles, que se utilizará para el pago de remuneraciones según el contrato de condiciones generales.
+- Cuenta bancaria que permite recibir el salario y otros ingresos por parte del empleador de la cuenta, además de realizar retiros y transferencias según el contrato de condiciones generales.
+- Cuenta bancaria que está destinada a recibir pagos de sueldos o salarios.
+
++ [*] (implica|implicar) [*] (abrir|aperturar) [*] (cuenta|cuentas) [*] (sueldo|sueldos) [*]
+- Al abrir una cuenta sueldo en el Banco de Crédito del Perú, se obtiene una tarjeta de débito, acceso a banca por internet, y se pueden realizar operaciones bancarias como transferencias y pagos de servicios. garantizando en todo momento la protección de los derechos y obligaciones de ambas partes.
+
++ [*] (requisito|requisitos|condiciones)  [*] (abrir|aperturar) [*] (cuenta|cuentas) [*] (sueldo|sueldos) [*]
+- Para abrir una cuenta sueldo en el Banco de Crédito del Perú se necesitan documentos de identificación, constancia de trabajo y otros requisitos establecidos por el banco.
+
++ [*] (obligacion|responsabilidad|obligaciones) [*] titular [*] (cuenta|cuentas) [*] (sueldo|sueldos) [*]
+
+- Mantener su cuenta activa y realizar operaciones de acuerdo con las normas y regulaciones, así como notificar cambios en su información personal o laboral según el contrato de condiciones generales.
+- Mantener el saldo mínimo requerido, cumplir con requisitos de documentación y presentar información actualizada según el contrato de condiciones generales.
+
++ [*] (derecho|derechos) [*] titular [*] (cuenta|cuentas) [*] (sueldo|sueldos) [*]
+- Tiene derecho a recibir depósitos de su empleador y utiliza servicios bancarios asociados con la cuenta. Además, puede realizar retiros y transferencias, recibir información sobre la condición de la cuenta, así como su estado de cuenta mensual según el contrato de condiciones generales.
+
++ [*] (tarifas|comisiones|tarifa|comision) [*] titular [*] (cuenta|cuentas) [*] (sueldo|sueldos) [*]
+- Comisión de mantenimiento, comisión por retiros en cajeros automáticos de otros bancos y comisión por transferencias interbancarias.
+
++ [*] (cerrar|clausurar) [*] (cuenta|cuentas) [*] (sueldo|sueldos) [*]
+- Se debe presentar una solicitud escrita en la agencia del banco o se puede cerrar a través de la banca por internet. 
+
++ [*] (retiro|sacar|retirar) [*] (efectivo|plata) [*] (cuenta|cuentas) [*] (sueldo|sueldos)[*]
+- Para realizar un retiro de efectivo de la cuenta sueldo, se puede utilizar una tarjeta de débito en un cajero automático o acudir a una agencia del Banco de Crédito del Perú.
+
++ [*] (saldo|plata|efectivo) [*] minimo [*] (cuenta|cuentas) (sueldo|sueldos) [*]
+- La cuenta sueldo BCP no tiene un saldo mínimo requerido, pero es necesario mantener una actividad regular en la cuenta.
+
++ [*] (retirar|retiro) [*] (todo|total) [*] cuenta (sueldo|sueldos) [*]
+- El cliente puede retirar todo el dinero de su cuenta sueldo incluso en una sola operación.
+
++ [*] (beneficio|beneficios) [*] cuenta (sueldo|sueldos) [*]
+- Exoneración de comisiones de mantenimiento, acceso a una tarje de débito sin costo adicional y acceso a descuentos exclusivos en comercios afiliados.
+
++ [*] (finalidad|objetivo) [*] (contrato|condiciones generales) [*] cuenta (sueldo|sueldos) [*]
+- Se establece reglas y términos que deben seguir el banco y el cliente con el fin de proteger los derechos y obligaciones garantizando el cumplimiento transparente y justo.
+
+//> topic trasnferencia
+
++ [*] (realizar|hacer) [*] (transferencia|transferencias) [*]
+- Se ingresa a la plataforma en línea del banco y se sigues los pasos a realizar una transferencia electrónica, otra opción es por medio del teléfono dando información de la cuenta de destino y la cantidad a transferir.
+
++ [*] (cargo|cargos) [*] (transferencia|transferencias) [*]
+- Depende del tipo de cuenta y la cantidad de dinero a transferir, algunas son gratuitas o descuentos en cargos.
+
+//> topic tarjeta de debito
+
++ [*] (perder|perdi|bote|extravie|pierdo|extraviar|botar) [*] tarjeta [*] 
+- Se debe llamar al banco inmediatamente para indicar la pérdida y solicitar tarjeta nueva, para esto el banco desactiva la tarjeta que se perdió para que se evite usarla.
+
++ [*] que [*] tarjeta [*] debito [*]
+- Es un instrumento financiero que permite a los titulares de dicha cuenta bancaria realizar compras y retiros en efectivo de manera rápida y segura.
+
+
+//> topic sin fondos
+
++ [*] (solicito|solicitar) [*] (sobregiro|sobregiros) [*] (cuenta|cuenta corriente) [*]
+- El banco puede otorgar adelantos contra los cheques de otro banco, adelantos que tendrán la calidad de sobregiro. Sin embargo, es importante tener en cuenta que si esos cheques no fueran efectivamente pagados, el CLIENTE deberá devolver al BANCO las sumas entregadas en sobregiro. 
+
+
++ [*] que [*] (sobregiro|sobregiros) [*]
+- Un sobregiro es una cantidad de dinero que el banco puede prestar al CLIENTE en caso de que este presente cheques girados contra otro banco. En otras palabras, si el CLIENTE deposita un cheque de otro banco y no tiene suficiente saldo en su cuenta para cubrirlo, el banco puede otorgarle un adelanto en forma de sobregiro para cubrir la diferencia.
+
++ [*] (sucede|pasa) [*] cheque [*] (no tiene|sin|ningun) [*] (fondo|fondos) [*]
+- Se pueden aplicar cargos por cheques sin fondos y el banco puede solicitar el pago inmediato del saldo negativo.
+
++ [*] (sucede|pasa) [*] orden [*] pago [*] (no tiene|sin|ningun) [*] (fondo|fondos) [*]
+- Si el CLIENTE no tiene suficientes fondos en su cuenta para cubrir una orden de pago, el banco puede devolver el cheque o la orden de pago por falta de fondos. En este caso, el CLIENTE será responsable de cualquier perjuicio y responsabilidad derivado de su empleo. 
+
+//> topic en linea
+
++ [*] (consultar|ver) [*] (movimiento|transaccion|transacciones|movimientos) [*] (en linea|pagina web|plataforma) [*]
+- Se accede a la plataforma en línea y se puede visualizar los movimientos a tiempo real, a la vez esto se remite como notificaciones al correo electrónico registrado o por mensajes de textos. 
+
++ [*] (informacion|alcance) [*] (transacciones|saldos) [*]
+- Los saldos, cargos y abonos en las cuentas de ahorro y corriente constarán en registros electrónicos que se encontrarán a disposición del CLIENTE a través de la página web del BANCO. El CLIENTE también puede solicitar el envío del extracto de todos los movimientos producidos en sus cuentas, ya sea por correo electrónico sin costo o en físico asumiendo los costos asociados e indicados en la Cartilla de Información. 
+
+// OTROS
++ [*] ahorrar dinero [*]
+- Hay muchas maneras de ahorrar dinero. Algunas sugerencias son: reducir tus gastos en cosas que no son necesarias, establecer un presupuesto mensual y ahorrar una parte de tus ingresos, buscar ofertas y descuentos en tus compras, y utilizar una cuenta de ahorros con una tasa de interés alta.
+
++ [*] invertir mi dinero [*]
+- La mejor manera de invertir tu dinero depende de tus objetivos financieros y de tu nivel de riesgo. Algunas opciones de inversión son: acciones, bonos, fondos mutuos, bienes raíces, entre otros. Siempre es recomendable hablar con un asesor financiero antes de tomar cualquier decisión de inversión.
+
++ [*] mejorar mi historial crediticio [*]
+- Para mejorar tu historial crediticio, es importante que pagues tus deudas a tiempo, reduzcas tus deudas pendientes, no cierres cuentas de crédito antiguas y mantengas un bajo porcentaje de uso de tu crédito disponible.
+
++ [*] fondo de emergencia y por que es importante [*]
+- Un fondo de emergencia es un ahorro de dinero que se utiliza exclusivamente para emergencias, como gastos médicos inesperados o pérdida de empleo. Es importante tener un fondo de emergencia para estar preparado para cualquier imprevisto y evitar tener que recurrir a deudas con altas tasas de interés.
+
++ [*] pagar mis deudas de manera mas efectiva [*]
+- Puedes pagar tus deudas de manera más efectiva estableciendo un plan de pagos y priorizando las deudas con las tasas de interés más altas. También es recomendable hablar con tus acreedores para negociar un plan de pago y reducir los intereses.
+
++ [*] diferencia entre una cuenta de ahorros y una cuenta corriente [*]
+- Una cuenta de ahorros es una cuenta bancaria que te permite ahorrar dinero y ganar intereses sobre tus ahorros. Por otro lado, una cuenta corriente es una cuenta que te permite hacer transacciones como pagar facturas y hacer compras con cheques o tarjetas de débito.
+
++ [*] evitar cargos bancarios innecesarios [*]
+- Puedes evitar cargos bancarios innecesarios leyendo los términos y condiciones de tu cuenta bancaria y evitando exceder los límites de transacciones o saldos. También es recomendable utilizar los cajeros automáticos de tu banco para evitar cargos por uso de cajeros automáticos de otros bancos.
+
++ [*] tasa de interes actual para hipotecas [*]
+- La tasa de interés para hipotecas varía dependiendo del país y del banco. Es recomendable revisar las tasas de interés actuales de los bancos locales y compararlas para encontrar la mejor opción para ti.
+
++ [*] prepararme para la jubilacion [*]
+- Para prepararte para la jubilación, es importante establecer un plan de ahorro a largo plazo y contribuir regularmente a una cuenta de jubilación, como un 401(k) o un plan de ahorro individual (IRA). También es recomendable hablar con un asesor financiero para obtener consejos específicos sobre cómo prepararte para la jubilación.
+
++ [*] fondo de inversion [*]
+- Un fondo de inversión es una forma de inversión colectiva que permite a los inversores comprar acciones en un fondo que invierte en una variedad de valores, como acciones y bonos. Los fondos de inversión son una forma popular de inversión para aquellos que buscan diversificar su cartera y minimizar el riesgo.
+
+// -final
+
++ (adios|chau|nos vemos|hasta luego)
+- ¡Hasta luego! No dudes en volver si tienes más preguntas sobre finanzas personales.
+
++ *
+- Recuerda que soy un robot, me podrías preguntar de otra forma
+- Intenta hacer tu pregunta de otra manera.
+- Podrías reformularme tu pregunta

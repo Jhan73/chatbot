@@ -1,2 +1,2 @@
-password = 'Labradoodle24'
-pasm = 'poahhwogveorudqp'
+password = 'colocar contraseña de alwaysdata'
+pasm = 'colocar password de seguridad de gmail'
