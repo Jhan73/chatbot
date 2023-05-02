@@ -2,7 +2,9 @@
 
 {% block content %}
     <div>
-        <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero excepturi a possimus eum blanditiis aliquid repudiandae error inventore dignissimos quasi maiores nisi officia iste aliquam dolor non beatae, voluptatibus tempore?</p>
+        <p class="parrafo">
+            Después de haber completado el registro, recibirás un correo electrónico con el código de verificacion para validar. Una vez que hayas verificado tu cuenta, podrás acceder al chatbot desde WhatsApp y comenzar a chatear con él. Nuestro chatbot está diseñado para responder tus preguntas de manera rápida y precisa, y se encuentra en constante aprendizaje para brindarte una experiencia aún mejor.
+        </p>
     </div>
     <div class="box">
         <form action="/login/ " method="POST"> {% csrf_token %} 
@@ -12,5 +14,7 @@
             <input class="btn" type="submit" value="Registrar">
         </form>
     </div>
-    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quisquam eveniet perspiciatis nisi doloribus quidem atque repellat voluptatum nam, architecto laboriosam deleniti quaerat nobis provident explicabo voluptas asperiores, fugit esse.</p>
+    <p class="parrafo">
+        Nuestro chatbot utiliza inteligencia artificial avanzada para entender tus preguntas y proporcionarte las respuestas más precisas y relevantes.
+    </p>
 {% endblock %}

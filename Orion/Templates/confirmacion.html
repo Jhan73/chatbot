@@ -3,13 +3,16 @@
 
 {% block content %}
     <div>
-        <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis sed incidunt laborum rem magni qui placeat, facere repudiandae harum totam dicta vero aperiam saepe quae, illum ratione aliquam corrupti.</p>
+        <p class="parrafo">
+            Gracias por elegir nuestro chatbot con inteligencia artificial para WhatsApp, ¡esperamos que lo disfrutes! <br>
+            Si tienes alguna duda o necesitas ayuda durante el proceso de registro, no dudes en ponerte en contacto con nuestro equipo de soporte. Estamos aquí para ayudarte en cualquier momento.
+        </p>
     </div>
     <div class="container-img">
         <img class="check" src="{% static 'images/check.png' %}" alt="" width="150px">
     </div>
     <div>
-        <p>Felicitaciones <strong>{{nombre}}</strong>, ya puede usar <strong>OrionBot</strong> desde su celular</p>
+        <p><strong>{{nombre}}</strong>, ya puede usar <strong>OrionBot</strong> desde su celular</p>
     </div>
     <div>
         <a href="https://api.whatsapp.com/send?phone=+15550176858&text=Hola,%20%C2%BFc%C3%B3mo%20est%C3%A1s%3F" class="btn">Abrir WhatsApp</a>
