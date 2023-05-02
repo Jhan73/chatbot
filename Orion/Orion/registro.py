@@ -19,7 +19,7 @@ def login(request):
             usuario.set_telefono(request.POST['telefono'])
             global tokenGenerado
             tokenGenerado = random.randint(1000,9999)
-            enviarCorreo(usuario.get_email(), usuario.get_nombre(), tokenGenerado)
+            enviarCorreo(usuario.get_email(), tokenGenerado)
             return render(request, 'auth.html',{'email': usuario.get_email()})
     return render(request, 'login.html')
 inputToken = 0
@@ -31,7 +31,7 @@ def autenticacion (request):
             global tokenValidado
             inputToken = int(request.POST['token'])
             if inputToken == tokenGenerado:
-                registrarUsuario(usuario.get_nombre(), usuario.get_telefono())
+                registrarUsuario(usuario.get_nombre(),usuario.get_email(), usuario.get_telefono())
                 return render(request,'confirmacion.html',{'nombre':usuario.get_nombre()})
             else:
                 tokenValidado = not tokenValidado
