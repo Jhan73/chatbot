@@ -36,7 +36,7 @@ def whatsAppWebhook(request):
 def obtenerRespuesta(mensaje):
 
     bot = RiveScript()
-    bot.load_file('./finanzas.rive')
+    bot.load_file('./QA.rive')
     bot.sort_replies()
 
     puntuacion = string.punctuation
