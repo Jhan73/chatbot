@@ -14,8 +14,7 @@ def chatweb(request):
         timestamp = str(fecha_unix)
         caracteres = string.ascii_letters
         idsms = ''.join(random.choice(caracteres) for _ in range(50))
-        bot_respuesta = 'OrionBot'
         telefonoUsuario = '51999999999'
         canal = '10003'
-        registrarChat(inputMessage, respuesta, timestamp, idsms, bot_respuesta, telefonoUsuario, canal)
+        registrarChat(inputMessage, respuesta, timestamp, idsms, telefonoUsuario, canal)
         return JsonResponse(data)

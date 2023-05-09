@@ -26,10 +26,9 @@ def whatsAppWebhook(request):
     idsms = data['entry'][0]['changes'][0]['value']['messages'][0]['id']#extraemos el ID de whatsapp del array
     timestamp = data['entry'][0]['changes'][0]['value']['messages'][0]['timestamp']
     canal = "10001"
-    bot_respuesta = 'OrionBot'
     if mensaje is not None:
         respuesta = obtenerRespuesta(mensaje)
-        registrarChat(mensaje, respuesta, timestamp, idsms, bot_respuesta, telefonoUsuario, canal)
+        registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario, canal)
         enviarMensaje(telefonoUsuario, respuesta)
         return HttpResponse('success', status = 200)
 

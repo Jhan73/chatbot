@@ -38,9 +38,8 @@ def messengerWebhook(request):
         fecha_unix = int(fecha_actual.timestamp())
         timestamp = str(fecha_unix)
         telefonoUsuario = '51989898989'
-        bot_respuesta = 'Oronbot'
         canal = '10004'
-        registrarChat(mensaje, respuesta, timestamp, idsms, bot_respuesta, telefonoUsuario, canal)
+        registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario, canal)
         sendMessage(idmessenger, respuesta)
         
         return HttpResponse('ok', status=200)

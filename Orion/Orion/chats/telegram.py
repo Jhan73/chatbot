@@ -20,42 +20,48 @@ def mensaje(message):
     mensaje = message.json["text"]
     idsms = str(message.message_id)
     timestamp = str(message.date)
-    nombre = message.from_user['username']
+    nombre = str(message.chat.first_name) + " " + str(message.chat.last_name)
     telefonoUsuario = str(message.chat.id)
     respuesta = obtenerRespuesta(mensaje)
-    if existeUsuario(telefonoUsuario) == 0:
+    if not existeUsuario(telefonoUsuario):
         registrarUsuario(telefonoUsuario, nombre)
-    registrarChat(mensaje, respuesta, timestamp, idsms, bot_respuesta, telefonoUsuario, canal)
+    registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario, canal)
     bot.reply_to(message, respuesta)
 def existeUsuario(telefonoUsuario):
-    connection = psycopg2.connect(
-        host = 'postgresql-jhan.alwaysdata.net',
-        user = 'jhan',
-        password = SERVER_PASSWORD,
-        database = 'jhan_orion'
-    )
+    try:
+        connection = psycopg2.connect(
+            host = 'postgresql-jhan.alwaysdata.net',
+            user = 'jhan',
+            password = SERVER_PASSWORD,
+            database = 'jhan_orion'
+        )
 
-    cursor = connection.cursor()
+        cursor = connection.cursor()
 
-    query = ("SELECT count(id_chat) AS cantidad FROM usuarios WHERE telefono = '" + telefonoUsuario +"'")
-    cursor.execute(query)
-    cantidad, = cursor.fetchone()
-    cantidad = int(str(cantidad))
-    return cantidad
+        query = ("SELECT count(telefono) AS cantidad FROM usuarios WHERE telefono = '" + telefonoUsuario +"'")
+        cursor.execute(query)
+        cantidad, = cursor.fetchone()
+        cantidad = int(str(cantidad))
+    except Exception as ex:
+        print(ex)
+    finally:
+        connection.close()
+    return bool(cantidad)
 def registrarUsuario(telefonoUsuario, nombre):
-    connection = psycopg2.connect(
-        host = 'postgresql-jhan.alwaysdata.net',
-        user = 'jhan',
-        password = SERVER_PASSWORD,
-        database = 'jhan_orion'
-    )
-    cursor = connection.cursor()
-    email = nombre + span
-    sql = ("INSERT INTO usuarios (telefono, nombre, email) VALUES (%s, %s, %s)")
-    cursor.execute(sql, (telefonoUsuario, nombre, email))
-    connection.commit()
+    try:
+        connection = psycopg2.connect(
+            host = 'postgresql-jhan.alwaysdata.net',
+            user = 'jhan',
+            password = SERVER_PASSWORD,
+            database = 'jhan_orion'
+        )
+        cursor = connection.cursor()
+        email = "".join((nombre.lower() + span).split())
+        sql = ("INSERT INTO usuarios (telefono, nombre, email) VALUES (%s, %s, %s)")
+        cursor.execute(sql, (telefonoUsuario, nombre, email))
+        connection.commit()
+    except Exception as ex:
+        print(ex)
+    finally:
+        connection.close()
 bot.polling()
-
-
-
-

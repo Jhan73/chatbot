@@ -29,5 +29,6 @@ urlpatterns = [
     path('confirmacion/',registro.confirmacion),
     path('telegram/',telegram.telegramConnetion),
     path('facebookMessenger/',messenger.messengerConnection),
-    path('webchat/',webChat.chatweb)
+    path('webchat/',webChat.chatweb),
+    path('fwebhook/', messenger.messengerWebhook)
 ]

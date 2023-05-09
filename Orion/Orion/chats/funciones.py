@@ -5,6 +5,7 @@ import string
 from unidecode import unidecode
 import openai
 
+bot_respuesta = 'OrionBot'
 def obtenerRespuesta(mensaje):
 
     bot = RiveScript()
@@ -19,9 +20,11 @@ def obtenerRespuesta(mensaje):
     respuesta = respuesta.replace('\\','')
     if respuesta == "error":
         respuesta = obtenerRespuestaConChatGPT(mensaje)
+        global bot_respuesta
+        bot_respuesta = 'ChatGPT'
     return respuesta    
 
-def registrarChat(mensaje, respuesta, timestamp, idsms, bot_respuesta, telefonoUsuario, canal):
+def registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario, canal):
     try :
         connection = psycopg2.connect(
             host = 'postgresql-jhan.alwaysdata.net',
