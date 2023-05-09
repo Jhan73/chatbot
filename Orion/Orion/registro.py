@@ -2,10 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import psycopg2
 import random
-from .crd import password, pasm
+from .chats.crd import SERVER_PASSWORD, MAIL_PASSWORD, SENDERS_MAIL
 from .models import Usuario
 
 def home(request):
+    return render(request, 'index.html')
+
+def registroWhatsapp(request):
     return render(request, 'home.html')
 tokenGenerado = 0
 usuario = Usuario()
@@ -43,8 +46,8 @@ def confirmacion(request):
 
 def enviarCorreo (email_usuario, token):
     import yagmail
-    email = 'antezana241197@gmail.com'
-    contra = pasm
+    email = SENDERS_MAIL
+    contra = MAIL_PASSWORD
     yag = yagmail.SMTP(user=email, password=contra)
     destinatarios = [email_usuario]
 
@@ -57,7 +60,7 @@ def registrarUsuario(nombre, email, telefono):
         connection = psycopg2.connect(
             host = 'postgresql-jhan.alwaysdata.net',
             user = 'jhan',
-            password = password,
+            password = SERVER_PASSWORD,
             database = 'jhan_orion'
         )
         cursor = connection.cursor()

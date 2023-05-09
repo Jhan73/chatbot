@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+    padding: 7px 10px;
+    color: #041d93;
+    border-bottom: 2px solid #041d93;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navegation{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 10px auto;
+    background: #f1f1f1;
+    box-shadow: 0px 1px 4px #d2d2d2;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}

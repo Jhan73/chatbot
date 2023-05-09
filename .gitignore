@@ -2,9 +2,10 @@
 /Orion/ejemplo.rive
 /Orion/estructura_data.json
 /Orion/documentacion.rive
-
-
-
+/Orion/estructura.json
+/Orion/views.py
+/Orion/Orion/chats/crd.py
+/Telegram2
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

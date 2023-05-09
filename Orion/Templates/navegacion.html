@@ -1,0 +1,25 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'styles/navStyle.css' %}">
+    <style>
+        .logo-nav{
+            border: none;
+        }
+        .logo-bcp{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navegation">
+        <a href="https://www.viabcp.com/" class="logo-nav" target="_blank"><img src="{% static 'images/log-bcp.png' %}" alt="logo" class="logo-bcp"></a>
+        
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/whatsappRegister/">WhatsAppBot</a></li>
+            <li><a href="/telegram/">TelegramBot</a></li>
+            <li><a href="/facebookMessenger/">MessengerBot</a></li>
+        </ul>
+    </nav>
+    
+</body>

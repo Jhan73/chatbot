@@ -1,7 +1,7 @@
 from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
-from .crd import password
+from .chats.crd import password
 from rivescript import RiveScript
 import psycopg2
 from heyoo import WhatsApp
@@ -28,10 +28,11 @@ def whatsAppWebhook(request):
     mensaje = data['entry'][0]['changes'][0]['value']['messages'][0]['text']['body']
     idsms = data['entry'][0]['changes'][0]['value']['messages'][0]['id']#extraemos el ID de whatsapp del array
     timestamp = data['entry'][0]['changes'][0]['value']['messages'][0]['timestamp']
-
+    canal = "10001"
+    bot_respuesta = 'Orionbot'
     if mensaje is not None:
         respuesta = obtenerRespuesta(mensaje)
-        registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario)
+        registrarChat(mensaje, respuesta, timestamp, idsms, bot_respuesta, telefonoUsuario, canal)
         return HttpResponse('success', status = 200)
 def obtenerRespuesta(mensaje):
 
@@ -48,7 +49,7 @@ def obtenerRespuesta(mensaje):
 
     return respuesta    
 
-def registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario):
+def registrarChat(mensaje, respuesta, timestamp, idsms, bot_respuesta, telefonoUsuario, canal):
     try :
         connection = psycopg2.connect(
             host = 'postgresql-jhan.alwaysdata.net',
@@ -66,9 +67,9 @@ def registrarChat(mensaje, respuesta, timestamp, idsms, telefonoUsuario):
         
         if cantidad == 0:
             sql = ("INSERT INTO chats " + 
-                   "(sms_recibido, sms_enviado, timestamp_wa, id_sms_recibido, telefono_usuario) VALUES "+
-                   "(%s, %s, %s, %s, %s)")
-            cursor.execute(sql, (mensaje, respuesta, int(timestamp), idsms, telefonoUsuario))
+                   "(sms_recibido, sms_enviado, timestamp_procesado, id_sms_recibido, bot_respuesta, telefono_usuario, canal) VALUES "+
+                   "(%s, %s, %s, %s, %s, %s, %s)")
+            cursor.execute(sql, (mensaje, respuesta, int(timestamp), idsms, bot_respuesta, telefonoUsuario, canal))
             connection.commit()
             enviarMensaje(telefonoUsuario, respuesta)
     except Exception as ex:
